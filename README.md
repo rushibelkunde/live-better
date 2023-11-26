@@ -1,5 +1,5 @@
 # Live Better App
-
+## LIVE LINK : https://live-better-blue.vercel.app/
 ## Overview
 
 Live Better is a comprehensive health and wellness application designed to empower users in managing medications, appointments, and emergency contacts. Built on Next.js, MongoDB, and React, the app offers a seamless and secure platform to enhance the overall well-being of its users.
