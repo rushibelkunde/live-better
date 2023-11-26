@@ -10,7 +10,7 @@ const medicines = async () => {
     const Medicines = await getDocs("Medicine")
     const handleSubmit=async(formdata) =>{
         "use server"
-        addDoc(formdata, "Medicine")
+        await addDoc(formdata, "Medicine")
         revalidatePath("/medicines")
     }
 

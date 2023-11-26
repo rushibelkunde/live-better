@@ -14,7 +14,9 @@ export const connectToDB = async()=>{
 
     try {
 
-        await mongoose.connect("mongodb://localhost/live-better")
+        // await mongoose.connect("mongodb://localhost/live-better")
+
+        await mongoose.connect(process.env.MONGODB_URI)
 
         isConnected = true
 

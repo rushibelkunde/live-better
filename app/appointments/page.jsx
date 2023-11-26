@@ -7,7 +7,7 @@ const page = async () => {
   const Appointments = await getDocs("Appointment")
   const handleSubmit = async (formdata) => {
     "use server"
-    addDoc(formdata, "Appointment")
+    await addDoc(formdata, "Appointment")
     revalidatePath("/appointment")
   }
   return (

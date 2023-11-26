@@ -7,7 +7,7 @@ const page = async () => {
   const EmergencyContacts = await getDocs("Emergency")
   const handleSubmit = async (formdata) => {
     "use server"
-    addDoc(formdata, "Emergency")
+    await addDoc(formdata, "Emergency")
     revalidatePath("/emergency")
   }
   return (
