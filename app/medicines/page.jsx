@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 import DeleteButton from './button'
 import { revalidatePath } from 'next/cache'
+export const dynamic = 'force-dynamic'
 
 const medicines = async () => {
     const Medicines = await getDocs("Medicine")

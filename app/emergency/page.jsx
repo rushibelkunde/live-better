@@ -3,6 +3,7 @@ import { addDoc } from '@/actions/actions'
 import { getDocs } from '@/actions/actions'
 import DeleteButton from './button'
 import { revalidatePath } from 'next/cache'
+export const dynamic = 'force-dynamic'
 const page = async () => {
   const EmergencyContacts = await getDocs("Emergency")
   const handleSubmit = async (formdata) => {
